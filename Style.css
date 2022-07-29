@@ -1,0 +1,171 @@
+body{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /*
+    border:1px solid yellow;
+    */
+}
+
+
+main{
+
+    background-color: whitesmoke;
+    display:flex;
+    align-self: center;
+    height:600px;
+    width:60vw;
+    /* border necessario */
+    border:1px solid black;
+    margin:8vh;
+}
+
+/* ESTRUTURA PRINCIPAL DENTRO DO MAIN  CHAT-HEADER -> MENSAGENS-CONTAINER -> CHAT-CONTAINER */
+
+.Chat-Header{
+
+    padding:5px;
+    flex-wrap: wrap;
+    display:flex;
+    justify-content:flex-start;
+    background-color: rgb(168, 168, 168);
+    /*
+    border:1px solid yellow;
+    */
+}
+
+.Chat-Header h3{
+
+    margin:10px;
+    font-size: 1.7em;
+}
+
+
+
+
+.Chat-Container{
+
+    flex-wrap:wrap;
+    flex-direction:column;
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    /*
+    border:1px solid purple;
+    */
+    height:173px;
+    width:100%;
+}
+
+.ChatBox-Container{
+
+
+    padding:5px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display:flex;
+    width:53%;
+    height:100px;
+    justify-content:flex-start;
+    background-color: rgb(168, 168, 168);
+    /*
+    border:1px solid yellow;
+    */
+}
+
+.Mensagem-Textarea{
+
+    border-radius: 2px;
+    height:100px;
+    width:77%;
+    resize: none;
+    border:1px solid rgb(31, 30, 30);
+    padding:8px;
+}
+
+
+.Mensagem-Button{
+    margin-top: 2px;
+    color:whitesmoke;
+    border-radius: 9px;
+    background-color: rgb(71, 187, 255);
+    font-size: 0.8em;
+    font-weight: 200;
+    border:0;
+    width:60px;
+    height:30px;
+    cursor: pointer;
+}
+
+
+/* MENSAGENS-CONTAINER -> DIV CONTAINER ONDE DE FATO APARECE AS MENSAGENS */
+
+.Mensagens-Container{
+
+    /* padding-top: 25px; */
+    flex-wrap:wrap;
+    display:flex;
+    justify-content: flex-start;
+    height:360px;
+    width:100%;
+    /*
+    border:1px solid pink;
+    */
+    overflow-y: scroll;
+}
+
+.msg-box{
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    margin:11px;
+    /*
+    border:1px solid yellow;
+    */
+    height:60px;
+    width:95%;
+}
+
+.msg-content{
+    border:1px solid black;
+    display:flex;
+    width:100%;
+    height: auto;
+    overflow-wrap: break-word;
+}
+
+.msg-content textarea{
+    width:100%;
+    min-height: 40px;
+    resize: none;
+    background-color: whitesmoke;
+    color:black;
+    /*
+    border:2px solid green;
+    */
+}
+
+.options-content{
+    display:flex;
+    justify-content: flex-end;
+    align-items:flex-start;
+    width:120px;
+    height:26px;
+    /*
+    border:1px solid black;
+    */
+}
+
+.Editar-Button{
+    background-color: rgb(231, 176, 73);
+    cursor: pointer;
+    border:0;
+}
+
+.Deletar-Button{
+    background-color: rgb(247, 72, 72);
+    cursor: pointer;
+    border:0;
+}
